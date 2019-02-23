@@ -17,6 +17,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.hover :active{
+  opacity: 1;
+  size:500px
+}
+
+
+#triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 100px solid transparent;
+}
 
 .App-link {
   color: #61dafb;
@@ -29,4 +41,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#components-layout-demo-fixed .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 24px 16px 0;
+  float: left;
 }
