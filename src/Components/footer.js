@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb,Row, Col, Slider ,Timeline ,Anchor,Icon} from 'antd';
-import po from "./panda.png";
-import sunGlasses from "./sunGlasses.png";
 import poPanda4 from "./poPanda4.png";
 
 class Footer extends Component{
