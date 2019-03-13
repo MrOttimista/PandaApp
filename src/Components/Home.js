@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb,Row, Col, Slider ,Timeline ,Anchor,BackTop} from 'antd';
 import Particles from 'react-particles-js';
-import panda from "./panda.svg";
 import panda1 from "./Adel.png";
 import poooPanda from "./poooPanda.png";
 import PHome from "./PHome";
@@ -10,6 +9,7 @@ import Cards from "./Cards";
 import Projects from "./Projects";
 import Data from "./Data.js";
 import space from "./Space.png";
+import Tools from "./tools.js"
 
 const { Link } = Anchor;
 
@@ -18,6 +18,7 @@ class Home extends Component{
 
   render(){
     return(
+
       <div style={{width:"100%"}}>
 
       <div style={{position:"absolute",top:"30%",textAlign:"center",zIndex:"150",width:"100%",display:"block",transform:"translateY(-43%)",pointerEvents:"none"}}>
@@ -85,8 +86,8 @@ class Home extends Component{
       </Timeline>
       </div>
       </Col>
-      <Col span={12} type={"flex"} justify={"center"} align={"middle"} style={{height:"100%"}}>
-        <div style={{width:"100%",height:"100%",textAlign:"center"}}>
+      <Col span={12} type={"flex"} justify={"center"} align={"middle"} >
+        <div style={{width:"100%",textAlign:"center"}}>
           <img style={{color: "white",paddingTop:"23%"}} src={poooPanda} width={"300px"}/>
         </div>
 
@@ -97,9 +98,8 @@ class Home extends Component{
       <PHome />
       <Cards />
       <Projects />
-
-
       <BackTop />
+
     </div>
     )
   }

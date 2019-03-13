@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb,Row, Col, Slider ,Timeline ,Anchor,Icon} from 'antd';
 import poPanda4 from "./poPanda4.png";
+import reactPng from "./react.png";
+import d3 from "./d3.png";
+import reduxPng from "./redux.png"
 
 const IconFont = Icon.createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
@@ -10,27 +13,34 @@ class Projects extends Component{
 
   render(){
     return(
-      <Row style={{height:"900px",backgroundColor:"#395454",width:"100%",top:"-430px"}} id={"3"}>
+      <Row style={{height:"880px",backgroundColor:"#395454",top:"-430px"}} id={"3"}>
       <Col span={10} style={{height:"100%",padding:"50px",paddingLeft:"230px"}} className={"grow"}>
-      <h1 style={{top:"54px",color:"#f5a623"}}><Icon type="user" style={{fontSize:"50px"}}/> About Me</h1>
-      <p style={{width:"400px",fontSize:"18px"}}>I am a passionate User Experience Developer who has been practicing and training in this field for more than 14 months now.I am a Junior Computer Engineering student at Nile University
- I love my major as a computer engineering student. If you have an idea let's turn it into reality </p>
+      <h1 style={{paddingTop:"120px",color:"#f5a623"}}><Icon type="laptop" style={{fontSize:"50px"}}/> Projects</h1>
+      <Row style={{paddingLeft:"20px"}}>
+      <h1 style={{color:""}}><Icon type="robot" style={{fontSize:"30px"}}/> Chatbot</h1><p style={{color:"white"}}><span style={{color:"white"}}><span style={{fontSize:"20px"}}>
+        I was responsible for developing the frontend of a Chatbot web application in Optomatica, connecting the backend with the frontend.
+        I used React and Redux in this web application. In this application i used AntDesign as an UI library.
+      </span>
+      </span>
+      <br />
+      <img src={reactPng} width={"90px"}/>      <img src={reduxPng} width={"70px"}/>   <img src={d3}style={{paddingLeft:"10px"}} width={"70px"}/>
+      </p>
+      </Row>
+      <Row style={{paddingLeft:"20px",paddingTop:"30px"}}>
+      <h1 style={{color:""}}><Icon type="robot" style={{fontSize:"30px"}}/> MineSweeper App</h1><p style={{color:"white"}}><span style={{color:"white",fontSize:"20px"}}>
+        I bulid this game app and it was a practicing for myself. The game is MineSweeper and the whole game and the alogorithm is written by me.In this application, I used d3 library (Radar Chart) to simulate the data from users.
+        I used React and Redux in this web application. <a href={"https://github.com/MrOttimista/gameApp"}>click here to review it</a>
+      </span>
+      <img src={reactPng} width={"90px"}/>   <img src={d3}style={{paddingLeft:"10px"}} width={"70px"}/>
+      </p>
+      </Row>
       </Col>
-
-      <Col className={"grow"} span={8} style={{height:"100%"}}>
-      <img  src={poPanda4} width={"60%"} height={"100%"}/>
-      </Col>
-      <Col span={6} style={{height:"100%",paddingTop:"50px"}} >
-      <h1 style={{top:"54px",color:"#f5a623"}}><Icon type="user-add" style={{fontSize:"50px"}}/> Experience</h1>
-      <p style={{width:"400px",fontSize:"18px"}}>I got two internships in Optomatica for 4 months where I started my journey in web development. Then I got a certificate from CodeCamp in JavaScript and datastructure and algorithms. I started to learn on my own and build some web apps as projects </p>
-      <h1 style={{paddingTop:"50px",color:"#f5a623"}}><Icon type="message" style={{fontSize:"50px"}}/> Contact</h1>
-
-        <a href={"https://github.com/MrOttimista"}><Icon type="github" style={{fontSize:"50px",color:"black"}} /></a>
-        <a href={"https://www.facebook.com/adel.emad.3954"}><Icon type="facebook" style={{fontSize:"50px",color:"black",marginLeft:"10px"}} /></a>
-        <a href={"https://www.linkedin.com/in/adel-emad-615422154"}><Icon type="linkedin" style={{fontSize:"50px",color:"black",marginLeft:"10px"}} /></a>
-
-      <p style={{width:"400px",fontSize:"18px"}}></p>
-
+      <Col className={"grow"} span={8} style={{height:"100%",paddingTop:"230px",paddingLeft:"220px"}}>
+    <h1 style={{color:""}}><Icon type="robot" style={{fontSize:"30px"}}/> Protfolio App</h1> <p style={{color:"white"}}><span style={{color:"white",fontSize:"20px"}}>
+        This app is developed through two phases: the first one was a draft for this app which has many bugs and errrors. the second phase is this app where I used React and Particles js to develop it...
+          <a href={"https://github.com/MrOttimista/MrOttimista.github.io"}>click here to review it</a>
+      </span>
+      </p>
       </Col>
       </Row>
     )
